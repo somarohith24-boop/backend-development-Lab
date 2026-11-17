@@ -261,6 +261,7 @@ The working outputs and database verification are documented in `screenshots/`:
 ---
 
 ## Deployment Status and Explanation
+https://backend-development-lab-j27h.vercel.app
 
 - **Status:** Not Deployed to Cloud Hosting.
 - **Explanation:** Free cloud hosting tiers (like Render or Vercel) use **ephemeral filesystems**. Any changes written to a local `database.db` file are erased when the container sleeps or restarts. Deploying SQLite in cloud production requires persistent block storage volumes (e.g. Render Persistent Disks). All five CRUD routes are verified locally.
